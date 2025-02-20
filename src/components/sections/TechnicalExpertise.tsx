@@ -9,14 +9,12 @@ const TechnicalExpertise = () => {
       title: "Frontend Development",
       icon: <Layout className="w-6 h-6" />,
       skills: [
-        { name: "Angular", level: "Advanced" },
+        { name: "Angular", level: "Intermediate" },
         { name: "React.js", level: "Advanced" },
-        { name: "Next.js", level: "Advanced" },
+        { name: "Next.js", level: "Intermediate" },
         { name: "TypeScript", level: "Advanced" },
         { name: "JavaScript", level: "Advanced" },
-        { name: "Tailwind CSS", level: "Advanced" },
-        { name: "UI/UX Design", level: "Intermediate" },
-        { name: "Responsive Design", level: "Advanced" }
+        { name: "Tailwind CSS", level: "Advanced" }
       ],
       bgColor: "bg-blue-50",
       borderColor: "border-blue-200",
@@ -28,7 +26,7 @@ const TechnicalExpertise = () => {
       skills: [
         { name: "Node.js", level: "Advanced" },
         { name: "Express", level: "Advanced" },
-        { name: "Django", level: "Intermediate" },
+        { name: "Django", level: "Advanced" },
         { name: "Python", level: "Advanced" },
         { name: "C++", level: "Intermediate" },
         { name: "REST APIs", level: "Advanced" }
@@ -42,8 +40,8 @@ const TechnicalExpertise = () => {
       icon: <Database className="w-6 h-6" />,
       skills: [
         { name: "MongoDB", level: "Advanced" },
-        { name: "Microsoft SQL Server", level: "Intermediate" },
-        { name: "PostgreSQL", level: "Intermediate" },
+        { name: "Microsoft SQL Server", level: "Advanced" },
+        { name: "PostgreSQL", level: "Basic" },
         { name: "MySQL", level: "Intermediate" }
       ],
       bgColor: "bg-purple-50",
@@ -90,8 +88,10 @@ const TechnicalExpertise = () => {
                     <span className={`text-sm px-2 py-1 rounded ${
                       skill.level === 'Advanced' 
                         ? 'bg-green-100 text-green-800'
-                        : 'bg-blue-100 text-blue-800'
-                    }`}>
+                        : skill.level === 'Intermediate'
+                          ? 'bg-blue-100 text-blue-800'
+                          : 'bg-amber-100 text-amber-800'
+                      }`}>
                       {skill.level}
                     </span>
                   </div>
