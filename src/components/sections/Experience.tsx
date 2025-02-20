@@ -1,6 +1,6 @@
 "use client";
 
-import { Building2, Calendar, MapPin, ArrowUpRight } from 'lucide-react';
+import { Building2, Calendar, MapPin } from 'lucide-react';
 
 export default function Experience() {
   const experiences = [

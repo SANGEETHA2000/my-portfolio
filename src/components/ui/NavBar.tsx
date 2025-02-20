@@ -9,13 +9,13 @@ const NavBar = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/my-portfolio/#home' },
+    { name: 'Skills', href: '/my-portfolio/#skills' },
+    { name: 'Experience', href: '/my-portfolio/#experience' },
+    { name: 'Projects', href: '/my-portfolio/#projects' },
+    { name: 'Education', href: '/my-portfolio/#education' },
+    { name: 'Achievements', href: '/my-portfolio/#achievements' },
+    { name: 'Contact', href: '/my-portfolio/#contact' },
   ];
 
   useEffect(() => {

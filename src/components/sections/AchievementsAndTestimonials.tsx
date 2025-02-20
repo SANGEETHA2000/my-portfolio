@@ -144,7 +144,7 @@ export default function AchievementsAndTestimonials() {
                         </svg>
                         
                         <p className="text-gray-300 leading-relaxed italic relative z-10 pl-6">
-                        "{testimonial.content}"
+                        &quot;{testimonial.content}&quot;
                         </p>
                     </div>
                     </div>

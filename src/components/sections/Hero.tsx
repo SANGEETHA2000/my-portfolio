@@ -59,7 +59,7 @@ export default function Hero() {
             
             <div className="absolute inset-2 rounded-full overflow-hidden">
               <Image
-                src="/profile.png" 
+                src="/my-portfolio/profile.png" 
                 alt="Sangeetha V D"
                 fill
                 className="object-cover"

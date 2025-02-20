@@ -61,6 +61,7 @@ export default function Contact() {
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       setSubmitStatus('error');
+      console.log(error)
     } finally {
       setIsSubmitting(false);
       setTimeout(() => setSubmitStatus('idle'), 3000);
@@ -75,7 +76,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-gray-400 text-lg">
-            Let's connect and discuss potential opportunities
+            Let&apos;s connect and discuss potential opportunities
           </p>
         </div>
 
