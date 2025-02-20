@@ -10,7 +10,7 @@ import AchievementsAndTestimonials from '@/components/sections/AchievementsAndTe
 
 export default function Home() {
   return (
-    <main className="flex-grow">
+    <main className="flex-grow min-h-screen">
       <NavBar />
       
       <Suspense fallback={<div>Loading...</div>}>
